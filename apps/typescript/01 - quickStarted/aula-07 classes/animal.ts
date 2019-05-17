@@ -1,12 +1,16 @@
 export class Animal {
-    private nome: string;
+    private animal : string;
 
-    constructor(nome: string) {
-        this.nome = nome;
+    constructor(animal : string) {
+        this.animal = animal;
     }
 
-    public log(value : any) : void {
-        console.log("O " + this.nome + " se moveu " + value + " metros")
+    public getAnimal(){
+        return this.animal
+    }
+
+    public log(value : number) : void {
+        console.log(`O ${this.animal} se moveu ${value} metros `)
     }
 
     public mover(distancia : number) {

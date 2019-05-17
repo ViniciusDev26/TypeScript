@@ -1,5 +1,10 @@
 import { Animal } from './animal';
+import { Cavalo } from './cavalo';
 
-let a = new Animal('Rex');
+let cavalo = new Cavalo('Cavalo', 'Quarto de milha');
 
-a.mover(5);
+cavalo.mover(50);
+
+let animal = new Animal('Cachorro');
+
+animal.mover(5)
