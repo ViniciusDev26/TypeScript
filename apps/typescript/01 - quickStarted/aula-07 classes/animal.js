@@ -7,11 +7,8 @@ var Animal = /** @class */ (function () {
     Animal.prototype.getAnimal = function () {
         return this.animal;
     };
-    Animal.prototype.log = function (value) {
-        console.log("O " + this.animal + " se moveu " + value + " metros ");
-    };
     Animal.prototype.mover = function (distancia) {
-        this.log(distancia);
+        console.log("O " + this.animal + " se moveu " + distancia + " metros ");
     };
     return Animal;
 }());

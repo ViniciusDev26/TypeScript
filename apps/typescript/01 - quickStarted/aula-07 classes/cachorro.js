@@ -14,19 +14,16 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var animal_1 = require("./animal");
-var Cavalo = /** @class */ (function (_super) {
-    __extends(Cavalo, _super);
-    function Cavalo(animal, raca) {
+var Cachorro = /** @class */ (function (_super) {
+    __extends(Cachorro, _super);
+    function Cachorro(animal, raca, cor, idade) {
         var _this = _super.call(this, animal) || this;
         _this.raca = raca;
+        _this.cor = cor;
+        _this.idade = idade;
         return _this;
     }
-    Cavalo.prototype.mover = function (distancia) {
-        var animal = _super.prototype.getAnimal.call(this);
-        console.log("O " + animal + "(" + this.raca + ") se moveu " + distancia + " metros ");
-    };
-    ;
-    return Cavalo;
+    return Cachorro;
 }(animal_1.Animal));
-exports.Cavalo = Cavalo;
-//# sourceMappingURL=cavalo.js.map
+exports.Cachorro = Cachorro;
+//# sourceMappingURL=cachorro.js.map
